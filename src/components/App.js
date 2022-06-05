@@ -41,8 +41,20 @@ class App extends Component {
         </Header>
         <div className="container-fluid">
           <div className="row">
-            <div className="col-12 col-sm-6"><Form></Form></div>
-            <div className="col-12 col-sm-6"><Code></Code></div>
+            <div className="col-12 col-sm-6">
+              <Form
+                FormData={{
+                  FullName: `${this.state.FormData.FirstName} ${this.state.FormData.LastName}`,
+                  ...this.state.FormData,
+                }}
+              />
+            </div>
+            <div className="col-12 col-sm-6">
+              <Code
+                FullName={`${this.state.FormData.FirstName} ${this.state.FormData.LastName}`}
+                {...this.state.FormData}
+              />
+            </div>
           </div>
         </div>
       </div>
