@@ -6,6 +6,17 @@ import Form from "./Form";
 class App extends Component {
   state = {
     Dark: false,
+    FormData: {
+      FirstName: "Value of FirstName",
+      LastName: "Value of LastName",
+      Thumbnail: "Value of Thumbnail",
+      URL: "Value of URL",
+      Description: "Value of Description",
+      KeyWords: "Value of KeyWords",
+      Address: "Value of Address",
+      Phone: "Value of Phone",
+      Email: "Value of Email",
+    },
   };
   toggleHeader = () => {
     this.setState({
