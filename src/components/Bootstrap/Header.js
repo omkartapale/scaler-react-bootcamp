@@ -1,4 +1,3 @@
-import React from "react";
 // Arrow function in javascript
 const Header = ({ dark, children, className, to, Link }) => {
   dark = !!dark ? "dark" : "light";
