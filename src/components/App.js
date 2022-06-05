@@ -17,6 +17,15 @@ class App extends Component {
       Address: "Pune, India",
       Phone: "+91 9990909123",
       Email: "omkartapale@github.com",
+      Socials: {
+        Facebook: "omkartapale",
+        WhatsApp: "omkar",
+        Instagram: "omkartapale",
+        Twitter: "omkartapale",
+        LinkedIn: "omkartapale",
+        GitHub: "omkartapale",
+        StackOverflow: "123456"
+      },
       Experience: [
         {
           Role: "Founder",
