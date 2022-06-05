@@ -39,7 +39,7 @@ const Form = ({ FormData, onChange }) => {
           Desc={Desc[fd][2]}
           Id={fd}
           Value={FormData[fd]}
-          onChange={fd === "FullName" ? undefined : onChange}
+          onChange={fd === "FullName" ? ()=>{} : onChange}
         />
       ))}
     </div>
