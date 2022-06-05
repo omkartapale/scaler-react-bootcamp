@@ -31,19 +31,22 @@ const Form = ({ FormData, onChange }) => {
   };
   return (
     <div className="Form">
-      {Object.keys(FormData).map((fd) => (
-        <FormGroup
-          key={fd}
-          Label={Desc[fd][1]}
-          Type={Desc[fd][0]}
-          Desc={Desc[fd][2]}
-          Id={fd}
-          Value={FormData[fd]}
-          Placeholder={`Enter value for ${fd}`}
-          onChange={fd === "FullName" ? ()=>{} : onChange}
-          readOnly={fd === "FullName" ? true : false}
-        />
-      ))}
+      {Object.keys(FormData).map(
+        (fd) =>
+          Object.keys(Desc).includes(fd) && (
+            <FormGroup
+              key={fd}
+              Label={Desc[fd][1]}
+              Type={Desc[fd][0]}
+              Desc={Desc[fd][2]}
+              Id={fd}
+              Value={FormData[fd]}
+              Placeholder={`Enter value for ${fd}`}
+              onChange={fd === "FullName" ? () => {} : onChange}
+              readOnly={fd === "FullName" ? true : false}
+            />
+          )
+      )}
     </div>
   );
 };
