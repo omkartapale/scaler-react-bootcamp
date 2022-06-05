@@ -39,6 +39,7 @@ const Form = ({ FormData, onChange }) => {
           Desc={Desc[fd][2]}
           Id={fd}
           Value={FormData[fd]}
+          Placeholder={`Enter value for ${fd}`}
           onChange={fd === "FullName" ? ()=>{} : onChange}
         />
       ))}
