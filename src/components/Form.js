@@ -41,6 +41,7 @@ const Form = ({ FormData, onChange }) => {
           Value={FormData[fd]}
           Placeholder={`Enter value for ${fd}`}
           onChange={fd === "FullName" ? ()=>{} : onChange}
+          readOnly={fd === "FullName" ? true : false}
         />
       ))}
     </div>
