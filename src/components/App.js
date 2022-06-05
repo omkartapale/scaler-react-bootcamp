@@ -34,7 +34,7 @@ class App extends Component {
             onClick={this.toggleHeader}
           >
             <i
-              class={"fa fa-" + (this.state.Dark ? "sun" : "moon") + "-o"}
+              className={"fa fa-" + (this.state.Dark ? "sun" : "moon") + "-o"}
               aria-hidden="true"
             ></i>
           </button>
